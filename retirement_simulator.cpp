@@ -25,6 +25,7 @@ int inversa(int jubilacion_estimada,int sueldo,int edad,float acum,float interes
 		}
 		
 	}
+	cout<<"No le alcanza la plata"<<endl;
 }
 
 int main(int argc, char const *argv[])
