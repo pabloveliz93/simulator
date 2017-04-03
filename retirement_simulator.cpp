@@ -8,7 +8,7 @@ int normal(int sueldo,int edad,float acum,int apv,float interes,int edad_jubilac
 	{
 		acum=acum+(sueldo*12)*0.1+apv;
 		acum=acum*(1+interes);
-        sueldo=sueldo*1.001;
+                sueldo=sueldo*1.001;
 	}
 	
 	return acum/240;
