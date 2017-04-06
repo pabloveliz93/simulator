@@ -41,9 +41,10 @@ int main(int argc, char const *argv[])
 		if (choice==1)
 		{
 			cout<<"Por favor ingrese:"<<endl;
-			cout<<"Sueldo"<<endl<<"Edad"<<endl<<"Monto acumulado hasta la fecha(si tiene)"<<endl<<"Ahorro Provicional voluntario"<<endl<<"interes"<<endl<<"Edad Jubilacion";
+			cout<<"Sueldo"<<endl<<"Edad"<<endl<<"Monto acumulado hasta la fecha(si tiene)"<<endl<<"Ahorro Provicional voluntario"<<endl<<"interes"<<endl<<"Edad Jubilacion"<<endl;
 			cout<<"Por favor ingrese cada una de las variables separadas por un espacio"<<endl;		
 			cin>>sueldo>>edad>>acum>>apv>>interes>>edad_jubilacion;
+			cout<<endl;
 			cout<<"El monto de su jubilacion mensual estimada es de "<<normal(sueldo,edad,acum,apv,interes,edad_jubilacion)<<endl;
 			cout<<"Desea hacer otro calculo? (1) = Si (0) = No"<<endl;
 			cin>>choice;
@@ -54,8 +55,9 @@ int main(int argc, char const *argv[])
 		}
 		else if(choice==2){
 			cout<<"Por favor ingrese:"<<endl;
-			cout<<"jubilacion estimada"<<endl<<"Sueldo"<<endl<<"Edad"<<endl<<"Monto acumulado hasta la fecha(si tiene)"<<endl<<"Interes"<<endl<<"Edad Jubilacion";
+			cout<<"jubilacion estimada"<<endl<<"Sueldo"<<endl<<"Edad"<<endl<<"Monto acumulado hasta la fecha(si tiene)"<<endl<<"Interes"<<endl<<"Edad Jubilacion"<<endl;
 			cin>>jubilacion_estimada>>sueldo>>edad>>acum>>interes>>edad_jubilacion;
+			cout<<endl;
 			cout<<"El ahorro previcional voluntario que usted deberia depositar mensualmente es de: "<<inversa(jubilacion_estimada,sueldo,edad,acum,interes,edad_jubilacion)<<endl;
 			cout<<"Desea hacer otro calculo? (1) = Si (0) = No"<<endl;
 			cin>>choice;
